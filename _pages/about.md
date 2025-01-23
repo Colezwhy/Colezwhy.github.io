@@ -36,15 +36,15 @@ Always open for interesting topics!
 
 **News**
 ======
+- **2025/01/23**: [Layout-Your-3D](https://arxiv.org/abs/2410.15391) is accepted to ICLR 2025!
+
 - **2024/10/22**: [Layout-Your-3D](https://arxiv.org/abs/2410.15391) now availlable on arxiv.
 
-- **2024/7/21**: Our work [WeakSAM](https://arxiv.org/abs/2402.14812) is accepted to ACM Multimedia 2024!
+- **2024/7/21**: [WeakSAM](https://arxiv.org/abs/2402.14812) is accepted to ACM Multimedia 2024!
 
-- **2024/6/8**: Starting my internship at UCMerced and working on generative tasks. Good luck!
-
-- **2024/3/30**: I will join [VLLab@UCMerced](http://vllab.ucmerced.edu/) as a visiting student, supervised by Prof. [Ming-Husan Yang](https://faculty.ucmerced.edu/mhyang/).
+- **2024/6/8**: Starting my internship at [VLLab@UCMerced](http://vllab.ucmerced.edu/), supervised by Prof. [Ming-Husan Yang](https://faculty.ucmerced.edu/mhyang/).
   
-- **2024/2/22**: Our work [WeakSAM](https://arxiv.org/abs/2402.14812) is now available on Arxiv, please check the full paper and refer to our open-sourced codes for more details.
+- **2024/2/22**: [WeakSAM](https://arxiv.org/abs/2402.14812) now available on Arxiv.
 
 **Education**
 ======
@@ -79,7 +79,6 @@ Always open for interesting topics!
     * General Visual Intelligence
     * Feature Enginnering
     * Vision-Language
-    * Unsupervised Learning
   * Supervisor: Xinggang Wang
 
 <img align="right" src="../images/Merced.webp" width = "100" height = "100" alt="UCMerced"/>
