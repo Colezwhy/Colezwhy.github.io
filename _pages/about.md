@@ -36,11 +36,11 @@ Always open for interesting topics!
 
 **News**
 ======
-- **2025/01/23**: [Layout-Your-3D](https://arxiv.org/abs/2410.15391) is accepted to ICLR 2025!
+- **2025/01/23**: [Layout-Your-3D](https://arxiv.org/abs/2410.15391) is accepted to **ICLR 2025**!
 
 - **2024/10/22**: [Layout-Your-3D](https://arxiv.org/abs/2410.15391) now availlable on arxiv.
 
-- **2024/7/21**: [WeakSAM](https://arxiv.org/abs/2402.14812) is accepted to ACM Multimedia 2024!
+- **2024/7/21**: [WeakSAM](https://arxiv.org/abs/2402.14812) is accepted to **ACM Multimedia 2024**!
 
 - **2024/6/8**: Starting my internship at [VLLab@UCMerced](http://vllab.ucmerced.edu/), supervised by Prof. [Ming-Husan Yang](https://faculty.ucmerced.edu/mhyang/).
   
