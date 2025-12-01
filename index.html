@@ -54,6 +54,48 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+    <tr onmouseout="amodalgen3d_stop()" onmouseover="amodalgen3d_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='amodalgen3d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/amodalgen3d.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+
+          </video></div>
+          <img src='images/amodalgen3d.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function amodalgen3d_start() {
+            document.getElementById('amodalgen3d_image').style.opacity = "1";
+          }
+
+          function amodalgen3d_stop() {
+            document.getElementById('amodalgen3d_image').style.opacity = "0";
+          }
+          amodalgen3d_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://colezwhy.github.io/amodalgen3d/">
+          <span class="papertitle">AmodalGen3D: Generative Amodal 3D Object Reconstruction from Sparse Unposed Views
+          </span>
+        </a>
+        <br>
+        <strong>Junwei Zhou</strong>,
+        <a href="https://yuwingtai.github.io/">Yu-Wing Tai</a>,
+        <br>
+        <em>Arxiv</em>, 2025
+        <br>
+        <a href="https://colezwhy.github.io/amodalgen3d/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2511.21945">arXiv</a>
+        <p></p>
+        <p>
+        Intergrating 2D amodal completion and 3D generative modeling to achieve amodal 3D objects reconstruction from sparse unposed views.
+        </p>
+      </td>
+    </tr>
+
     <tr onmouseout="coco4d_stop()" onmouseover="coco4d_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
@@ -188,14 +230,13 @@
             <tr>
               <td align="center" style="padding:16px;width:20%;vertical-align:middle">
 						     <div class="colored-box" style="background-color: #c6b89e;">
-								 <h2>Academic Service</h2>
+								 <h2>Service</h2>
 								 </div>
               </td>
               <td style="padding:8px;width:80%;vertical-align:center">
                 <a href="https://iclr.cc/">Reviewer, ICLR 2025, 2026</a>
-                <!-- <br>
                 <br>
-                <a href="https://cvpr.thecvf.com/">Reviewer, CVPR 2026</a> -->
+                <a Teaching Assistant, Dartmouth College, COSC074 2025 Fall</a>
                 <br>
               </td>
             </tr>
