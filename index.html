@@ -58,7 +58,91 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    
 
+            <tr onmouseout="ptp_stop()" onmouseover="ptp_start()">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='ptp_image'><video  width=100% height=100% muted autoplay loop>
+                  <source src="images/ptp.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+        
+                  </video></div>
+                  <img src='images/ptp.png' width="160">
+                </div>
+                <script type="text/javascript">
+                  function ptp_start() {
+                    document.getElementById('ptp_image').style.opacity = "1";
+                  }
+        
+                  function ptp_stop() {
+                    document.getElementById('ptp_image').style.opacity = "0";
+                  }
+                  ptp_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://colezwhy.github.io/perceivethenplan/">
+                  <span class="papertitle">Perceive-then-Plan: Layout-as-Policy for Monocular 3D Scene Layout Estimation
+                  </span>
+                </a>
+                <br>
+                <strong>Junwei Zhou</strong>,
+                <a href="https://yuwingtai.github.io/">Yu-Wing Tai</a>
+                <br>
+                <em>Arxiv</em>, 2026
+                <br>
+                <a href="https://colezwhy.github.io/perceivethenplan/">project page</a>
+                /
+                <a href="https://arxiv.org/abs/2605.25326">arXiv</a>
+                <p></p>
+                <p>
+                  We propose a perceive-then-plan framework with two VLMs (Perceiver and LaP Planner) for monocular 3D layout estimation, enabling both visual alignment and scene Coherence.
+                </p>
+              </td>
+            </tr>
+    
+        <tr onmouseout="gena3d_stop()" onmouseover="gena3d_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='gena3d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/gena3d.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+
+          </video></div>
+          <img src='images/gena3d.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function gena3d_start() {
+            document.getElementById('gena3d_image').style.opacity = "1";
+          }
+
+          function gena3d_stop() {
+            document.getElementById('gena3d_image').style.opacity = "0";
+          }
+          gena3d_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://colezwhy.github.io/gena3d/">
+          <span class="papertitle">GENA3D: Generative Amodal 3D Modeling by Bridging 2D Priors and 3D Coherence
+          </span>
+        </a>
+        <br>
+        <strong>Junwei Zhou</strong>,
+        <a href="https://yuwingtai.github.io/">Yu-Wing Tai</a>
+        <br>
+        <em>Arxiv</em>, 2025
+        <br>
+        <a href="https://colezwhy.github.io/gena3d/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2511.21945">arXiv</a>
+        <p></p>
+        <p>
+        Intergrating 2D amodal completion and 3D generative modeling to achieve amodal 3D objects generation from multiple partial occluded input images.
+        </p>
+      </td>
+    </tr>
 
     <tr onmouseout="gena3d_stop()" onmouseover="gena3d_start()">
       <td style="padding:16px;width:20%;vertical-align:middle">
