@@ -8,7 +8,7 @@
     <meta name="author" content="Junwei Zhou">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=dcee41d6">
     
   </head>
 
@@ -51,7 +51,43 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>News &amp; Updates</h2>
+                <div class="news" id="news">
+                  <!-- Newest first. To add news, copy one <li> line to the top of the first list.
+                       To fold an item away, move its <li> to the top of the list inside news-fold. -->
+                  <ul>
+                    <li><span class="news-date">Dec 2026</span><span>I will present <a href="https://colezwhy.github.io/perceivethenplan/">Perceive-then-Plan</a> at <strong>NeurIPS 2026</strong> in Atlanta. Feel free to stop by!</span></li>
+                    <li><span class="news-date">Sep 2026</span><span>&#127881; <a href="https://colezwhy.github.io/perceivethenplan/">Perceive-then-Plan</a> is accepted to <strong>NeurIPS 2026</strong>.</span></li>
+                    <li><span class="news-date">Jun 2026</span><span>&#127881; <a href="https://colezwhy.github.io/gena3d/">GENA3D</a> is accepted to <strong>ECCV 2026</strong>.</span></li>
+                  </ul>
+                  <div class="news-fold" id="news-fold">
+                    <div>
+                      <ul>
+                        <li><span class="news-date">Sep 2025</span><span>Started my Ph.D. at <a href="https://home.dartmouth.edu/">Dartmouth College</a>, advised by <a href="https://yuwingtai.github.io/">Prof. Yu-Wing Tai</a>.</span></li>
+                        <li><span class="news-date">Jun 2025</span><span><a href="https://colezwhy.github.io/coco4d/">CoCo4D</a> is released on <a href="https://arxiv.org/abs/2506.19798">arXiv</a>.</span></li>
+                        <li><span class="news-date">Jan 2025</span><span>&#127881; <a href="https://colezwhy.github.io/layoutyour3d/">Layout-your-3D</a> is accepted to <strong>ICLR 2025</strong>.</span></li>
+                        <li><span class="news-date">Jul 2024</span><span>&#127881; <a href="https://colezwhy.github.io/weaksam/">WeakSAM</a> is accepted to <strong>ACM Multimedia 2024</strong>.</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button type="button" class="news-toggle" id="news-toggle" aria-expanded="false" aria-controls="news-fold"><span class="news-toggle-label">more</span><span class="news-chevron" aria-hidden="true"></span></button>
+                </div>
+                <script type="text/javascript">
+                  (function () {
+                    var news = document.getElementById('news');
+                    var btn = document.getElementById('news-toggle');
+                    btn.addEventListener('click', function () {
+                      var open = news.classList.toggle('open');
+                      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+                      btn.querySelector('.news-toggle-label').textContent = open ? 'less' : 'more';
+                    });
+                  })();
+                </script>
+              </td>
+            </tr>
+            <tr>
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>Selected Publications</h2>
               </td>
@@ -60,26 +96,11 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     
 
-            <tr onmouseout="ptp_stop()" onmouseover="ptp_start()">
+            <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='ptp_image'><video  width=100% height=100% muted autoplay loop>
-                  <source src="images/ptp.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-        
-                  </video></div>
                   <img src='images/ptp.png' width="160">
                 </div>
-                <script type="text/javascript">
-                  function ptp_start() {
-                    document.getElementById('ptp_image').style.opacity = "1";
-                  }
-        
-                  function ptp_stop() {
-                    document.getElementById('ptp_image').style.opacity = "0";
-                  }
-                  ptp_stop()
-                </script>
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <a href="https://colezwhy.github.io/perceivethenplan/">
@@ -97,7 +118,7 @@
                 <a href="https://arxiv.org/abs/2605.25326">arXiv</a>
                 <p></p>
                 <p>
-                  We propose a perceive-then-plan framework with two VLMs (Perceiver and LaP Planner) for monocular 3D layout estimation, enabling both visual alignment and scene Coherence.
+                  We propose a perceive-then-plan framework with two VLMs (Perceiver and LaP Planner) for monocular 3D layout estimation, enabling both visual alignment and scene coherence.
                 </p>
               </td>
             </tr>
@@ -146,26 +167,11 @@
       </td>
     </tr> -->
 
-    <tr onmouseout="gena3d_stop()" onmouseover="gena3d_start()">
+    <tr>
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='gena3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/gena3d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-
-          </video></div>
           <img src='images/gena3d.png' width="160">
         </div>
-        <script type="text/javascript">
-          function gena3d_start() {
-            document.getElementById('gena3d_image').style.opacity = "1";
-          }
-
-          function gena3d_stop() {
-            document.getElementById('gena3d_image').style.opacity = "0";
-          }
-          gena3d_stop()
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://colezwhy.github.io/gena3d/">
@@ -183,7 +189,7 @@
         <a href="https://arxiv.org/abs/2511.21945">arXiv</a>
         <p></p>
         <p>
-        Intergrating 2D amodal completion and 3D generative modeling to achieve amodal 3D objects generation from multiple partial occluded input images.
+        Integrating 2D amodal completion and 3D generative modeling to achieve amodal 3D objects generation from multiple partial occluded input images.
         </p>
       </td>
     </tr>
@@ -242,14 +248,14 @@
           <img src='images/layoutyour3d.jpg' width="160">
         </div>
         <script type="text/javascript">
-          function coco4d_start() {
+          function layoutyour3d_start() {
             document.getElementById('layoutyour3d_image').style.opacity = "1";
           }
 
-          function coco4d_stop() {
+          function layoutyour3d_stop() {
             document.getElementById('layoutyour3d_image').style.opacity = "0";
           }
-          coco4d_stop()
+          layoutyour3d_stop()
         </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
@@ -274,26 +280,11 @@
       </td>
     </tr>
 
-    <tr onmouseout="weaksam_stop()" onmouseover="weaksam_start()">
+    <tr>
       <td style="padding:16px;width:20%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='weaksam_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/weaksam.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-
-          </video></div>
           <img src='images/weaksam.jpg' width="160">
         </div>
-        <script type="text/javascript">
-          function coco4d_start() {
-            document.getElementById('weaksam_image').style.opacity = "1";
-          }
-
-          function coco4d_stop() {
-            document.getElementById('weaksam_image').style.opacity = "0";
-          }
-          coco4d_stop()
-        </script>
       </td>
       <td style="padding:8px;width:80%;vertical-align:middle">
         <a href="https://colezwhy.github.io/weaksam/">
@@ -326,7 +317,7 @@
 								 </div>
               </td>
               <td style="padding:8px;width:80%;vertical-align:center">
-			    Reviewer, <a href="https://iclr.cc/">ICLR</a> 2025, 2026, 2027 | <a href="https://neurips.cc/">NeurIPS</a> 2026 | <a href="https://neurips.cc/">CVPR</a> 2027
+			    Reviewer, <a href="https://iclr.cc/">ICLR</a> 2025, 2026, 2027 | <a href="https://neurips.cc/">NeurIPS</a> 2026 | <a href="https://cvpr.thecvf.com/">CVPR</a> 2027
 			    <br>
 			    Reviewer, <a href="https://link.springer.com/journal/11263">IJCV</a> | <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34">TPAMI</a>
 			    <br>
